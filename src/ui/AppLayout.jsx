@@ -5,15 +5,16 @@ import Loader from "./Loader";
 
 export default function AppLayout() {
     const navigation = useNavigation();
-    const isLoading = navigation.state=== "loading";
-    return(
-        <div className="layout">
+    const isLoading = navigation.state === "loading";
+    return (
+        <div className="grid h-screen  grid-rows-[auto_1fr_auto] ">
             <Header></Header>
             {isLoading && <Loader></Loader>}
-            <main>
-                <Outlet></Outlet>
-            </main>
-               
+            <div>
+                <main className=" max-w-3xl mx-auto">
+                    <Outlet></Outlet>
+                </main>
+            </div>
             <CartOverview></CartOverview>
         </div>
     )
