@@ -9,6 +9,7 @@ function SearchOrder() {
     function handelSubmit(e) {
         e.preventDefault(); 
         if(!query)return ;
+        console.log(query);
         navigate(`/order/${query}`)
         setQuery("");
     }
