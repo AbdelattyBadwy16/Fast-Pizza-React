@@ -1,8 +1,3 @@
-# React + Vite
+# Fast-Pizza-React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a website for pizza ordering. You can enter your name, choose the desired orders, specify the priority of the order, and provide your name, phone number, and address. The address can be automatically obtained using the GPS feature, and then the order will appear for your confirmation. Each order is assigned a unique ID, allowing you to inquire about its status at any time. For this website, I utilized React, React-Redux, React-Router, various hooks including custom hooks, a Real Restaurant API, and Tailwind for styling
